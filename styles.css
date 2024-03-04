@@ -48,7 +48,7 @@ h6 {
 }
 
 .hero {
-  width: 100%;
+  width: 100vw;
   height: 100dvh;
   background: radial-gradient(#7190d3, #151731);
   display: flex;
@@ -64,6 +64,7 @@ h6 {
   width: min-content;
   font-size: 6.4rem;
   color: #fff;
+  width: 100%;
 }
 
 .display + p {
@@ -74,4 +75,16 @@ h6 {
 
 .display:focus-visible {
   outline: none;
+}
+
+.container {
+  margin-top: 2rem;
+  width: 30rem;
+  background-color: #fff;
+}
+
+.bar {
+  height: 2.4rem;
+  background-color: #b7e5b4;
+  width: 100%;
 }
