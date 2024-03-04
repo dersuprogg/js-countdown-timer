@@ -85,6 +85,22 @@ h6 {
 
 .bar {
   height: 2.4rem;
-  background-color: #b7e5b4;
+  background-color: #2b2a4c;
   width: 100%;
+}
+
+.btn {
+  background-color: #7190d3;
+  border: none;
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+  margin-top: 2rem;
+  border-radius: 0.2em;
+  color: #b7e5b4;
+  box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: translateY(2px);
 }
