@@ -10,9 +10,14 @@
 * {
   margin: 0;
 }
+
+html {
+  font-size: 62.5%;
+}
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: "Anta", sans-serif;
 }
 img,
 picture,
@@ -50,4 +55,23 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.display {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  width: min-content;
+  font-size: 6.4rem;
+  color: #fff;
+}
+
+.display + p {
+  color: #c1f2b0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.display:focus-visible {
+  outline: none;
 }
