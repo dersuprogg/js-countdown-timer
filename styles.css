@@ -46,4 +46,8 @@ h6 {
   width: 100%;
   height: 100dvh;
   background: radial-gradient(#7190d3, #151731);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
