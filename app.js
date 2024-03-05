@@ -31,3 +31,7 @@ function tick(timerId = undefined) {
     timerId && clearInterval(timerId);
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  inputText.value = 60;
+});
