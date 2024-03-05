@@ -4,14 +4,9 @@ const inputText = document.querySelector(".display");
 const bar = document.querySelector(".bar");
 
 startBtn.addEventListener("click", function () {
+  tick();
   const intervalId = setInterval(() => {
-    let time = parseInt(inputText.value);
-    if (time > 0) {
-      time--;
-      inputText.value = time;
-    } else {
-      clearInterval(intervalId);
-    }
+    tick(intervalId);
   }, 1000);
 
   const time = parseInt(inputText.value);
@@ -26,3 +21,13 @@ startBtn.addEventListener("click", function () {
     }
   }, 5);
 });
+
+function tick(timerId = undefined) {
+  let time = parseInt(inputText.value);
+  if (time > 0) {
+    time--;
+    inputText.value = time;
+  } else {
+    timerId && clearInterval(timerId);
+  }
+}
